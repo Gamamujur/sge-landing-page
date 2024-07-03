@@ -150,7 +150,7 @@ const Machineries = () => {
                 </p>
               </Link>
               <Link
-                href={Translator.gotoUrl("/lamella-clarifier-tank", lang)}
+                href={Translator.gotoUrl("/aquahelix-aquaclear", lang)}
                 className="relative flex flex-col items-center justify-end py-5 overflow-hidden transition duration-300 ease-in-out hover:rounded-2xl hover:font-bold hover:bg-[#EDF2F5]"
               >
                 <Image
