@@ -4,7 +4,7 @@ import Image from "next/image";
 import React from "react";
 import {useSearchParams} from "next/navigation";
 
-function AquahelixSurfaceAerator() {
+function AquahelixAnaerobicMixer() {
     const searchParams = useSearchParams();
     const lang = searchParams.get("lang") || undefined;
     return (
@@ -13,8 +13,8 @@ function AquahelixSurfaceAerator() {
                 <Image
                     width={900}
                     height={600}
-                    src="/img/solutions-and-product/machinaries-or-wastewater-technology/aquahelix-surface-aerator.png"
-                    className="z-20 object-cover px-5 mt-5 -my-40 max-w-4xl xl:mt-20 xl:px-0"
+                    src="/img/solutions-and-product/anaerobic-mixer.svg"
+                    className="z-20 object-cover px-5 mt-5 -my-40 max-w-5xl xl:mt-20 xl:px-0"
                     alt=""
                 />
             </div>
@@ -40,9 +40,6 @@ function AquahelixSurfaceAerator() {
                     <p className="mt-5 text-base leading-6">
                         {Translator.t("aquahelix-surface-aerator-desc-2", lang)}
                     </p>
-                    <p className="mt-5 text-base leading-6">
-                        {Translator.t("aquahelix-surface-aerator-desc-3", lang)}
-                    </p>
                     <p className="my-20 text-[#9C9C9C]">
                         Design and Manufacturing by PT. Satria Nusa Enjinering
                     </p>
@@ -52,4 +49,4 @@ function AquahelixSurfaceAerator() {
     );
 }
 
-export default AquahelixSurfaceAerator;
+export default AquahelixAnaerobicMixer;

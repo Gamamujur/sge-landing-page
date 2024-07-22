@@ -9,7 +9,7 @@ function OurParner() {
   const parner = [
     {
       img: "/img/partner/aquahelix_logo 1.png",
-      alt: "aquahelix",
+      alt: "aquaclear-cube",
     },
     {
       img: "/img/partner/teco_logo 1.png",

@@ -12,12 +12,12 @@ const page = () => {
   const lang = searchParams.get('lang') || undefined;
   const machineries = [
     {
-      title: Translator.t('aquahelix-surface-aerator-title', lang),
+      title: Translator.t('aquaclear-cube-surface-aerator-title', lang),
       image: "/img/produk/productaquahelix.png",
       image2: "",
-      text: Translator.t('aquahelix-surface-aerator-desc-1', lang),
+      text: Translator.t('aquaclear-cube-surface-aerator-desc-1', lang),
       text2:
-        "<div class='mt-5 text-[#41444B]'>" + Translator.t('aquahelix-surface-aerator-desc-2', lang) + "</div> <div class='mt-5 text-[#41444B]'>" + Translator.t('aquahelix-surface-aerator-desc-3', lang) + "</div>",
+        "<div class='mt-5 text-[#41444B]'>" + Translator.t('aquaclear-cube-surface-aerator-desc-2', lang) + "</div> <div class='mt-5 text-[#41444B]'>" + Translator.t('aquaclear-cube-surface-aerator-desc-3', lang) + "</div>",
     },
     {
       title: Translator.t('lamella-clarifier-tank', lang),
