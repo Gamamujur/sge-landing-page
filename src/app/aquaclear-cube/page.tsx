@@ -38,7 +38,7 @@ const Machineries = () => {
                         alt=""
                     />
                     <div className="relative z-50 w-2/3 mx-auto text-center max-w-7xl lg:w-1/2">
-                        <div className="relative flex justify-center items-center">
+                        <div className="relative flex items-center justify-center">
                             <Image
                                 className="z-10"
                                 src="/img/solutions-and-product/aqua_clear_cube.svg"
@@ -70,21 +70,6 @@ const Machineries = () => {
                                 </p>
                             </Link>
                             <Link
-                                href={Translator.gotoUrl("/reverse-osmosis", lang)}
-                                className="relative flex flex-col items-center justify-end py-5 overflow-hidden transition duration-300 ease-in-out hover:rounded-2xl hover:font-bold hover:bg-[#EDF2F5]"
-                            >
-                                <Image
-                                    width={100}
-                                    height={100}
-                                    className="w-full max-h-64 "
-                                    src="/img/solutions-and-product/reverse-osmosis.png"
-                                    alt=""
-                                />
-                                <p className="mt-2 text-xl font-semibold text-center">
-                                    Reverse Osmosis
-                                </p>
-                            </Link>
-                            <Link
                                 href={Translator.gotoUrl("/dissolved-air-flotation", lang)}
                                 className="relative flex flex-col items-center justify-end py-5 overflow-hidden transition duration-300 ease-in-out hover:rounded-2xl hover:font-bold hover:bg-[#EDF2F5]"
                             >
@@ -97,51 +82,6 @@ const Machineries = () => {
                                 />
                                 <p className="mt-2 text-xl font-semibold text-center">
                                     Dissolved Air Flotation
-                                </p>
-                            </Link>
-                            <Link
-                                href={Translator.gotoUrl("/aquaclear-cube-surface-aerator", lang)}
-                                className="relative flex flex-col items-center justify-end py-5 overflow-hidden transition duration-300 ease-in-out hover:rounded-2xl hover:font-bold hover:bg-[#EDF2F5]"
-                            >
-                                <Image
-                                    width={100}
-                                    height={100}
-                                    className="w-full max-h-64 "
-                                    src="/img/solutions-and-product/aquahelix.png"
-                                    alt=""
-                                />
-                                <p className="mt-2 text-xl font-semibold text-center">
-                                    Aquahelix Surface Aerator
-                                </p>
-                            </Link>
-                            <Link
-                                href={Translator.gotoUrl("/filter-press", lang)}
-                                className="relative flex flex-col items-center justify-end py-5 overflow-hidden transition duration-300 ease-in-out hover:rounded-2xl hover:font-bold hover:bg-[#EDF2F5]"
-                            >
-                                <Image
-                                    width={100}
-                                    height={100}
-                                    className="w-full max-h-64 "
-                                    src="/img/solutions-and-product/fp.png"
-                                    alt=""
-                                />
-                                <p className="mt-2 text-xl font-semibold text-center">
-                                    Filter Press
-                                </p>
-                            </Link>
-                            <Link
-                                href={Translator.gotoUrl("/wet-scrubber", lang)}
-                                className="relative flex flex-col items-center justify-end py-5 overflow-hidden transition duration-300 ease-in-out hover:rounded-2xl hover:font-bold hover:bg-[#EDF2F5]"
-                            >
-                                <Image
-                                    width={100}
-                                    height={100}
-                                    className="w-full max-h-64 "
-                                    src="/img/solutions-and-product/ws.png"
-                                    alt=""
-                                />
-                                <p className="mt-2 text-xl font-semibold text-center">
-                                    Wet Scrubber
                                 </p>
                             </Link>
                             <Link
