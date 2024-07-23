@@ -31,14 +31,14 @@ function AquahelixAnaerobicMixer() {
                 <div className="max-w-7xl">
                     <div className="mt-5">
                         <span className="text-[#0E4F94] text-4xl font-semibold">
-                            {Translator.t("aquahelix-surface-aerator-title", lang)}
+                            {Translator.t("aquahelix-anaerobic-mixer-title", lang)}
                         </span>
                     </div>
                     <p className="mt-5 text-base leading-6">
-                        {Translator.t("aquahelix-surface-aerator-desc-1", lang)}
+                        {Translator.t("aquahelix-anaerobic-mixer-desc-1", lang)}
                     </p>
                     <p className="mt-5 text-base leading-6">
-                        {Translator.t("aquahelix-surface-aerator-desc-2", lang)}
+                        {Translator.t("aquahelix-anaerobic-mixer-desc-2", lang)}
                     </p>
                     <p className="my-20 text-[#9C9C9C]">
                         Design and Manufacturing by PT. Satria Nusa Enjinering
