@@ -38,7 +38,7 @@ const DropdownImage = ({
         </div>
       </div>
       {isOpen && (
-        <div className="absolute z-50 bg-white border-2 shadow-lg rounded-xl">
+        <div className="absolute z-50 w-3/4 bg-white border-2 shadow-lg rounded-xl">
           {options.map((option, index) => (
             <React.Fragment key={option.url}>
               <div className="flex items-center justify-center w-full p-3 space-x-2 hover:bg-[#F2F2F2]">

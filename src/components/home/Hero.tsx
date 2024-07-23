@@ -2,29 +2,55 @@
 import { useSearchParams } from "next/navigation";
 import Translator from "@/utils/Translator";
 import Image from "next/image.js";
+import HeroButton from "./HeroButton";
 
 const Hero = () => {
-  const searchParams = useSearchParams();
-  const lang = searchParams.get("lang") || undefined;
+    const searchParams = useSearchParams();
+    const lang = searchParams.get("lang") || undefined;
 
-  return (
-    <section className="relative">
-      <Image
-        src={"/img/home/hero.png"}
-        className="object-cover h-[320px] md:h-auto"
-        alt=""
-        width={2000}
-        height={400}
-      />
-      <div className="absolute top-0 left-0 right-0 bottom-0 bg-black opacity-50"></div>
-      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white -mt-10 text-center font-bold leading-snug">
-        <div className="w-[280px] md:w-[800px] capitalize text-xl md:text-6xl">
-          {Translator.t("hero-1", lang)} <br />{" "}
-          <div>{Translator.t("hero-2", lang)}</div>
-        </div>
-      </div>
-    </section>
-  );
+    return (
+        <section className="relative">
+            <Image
+                src={"/img/home/main-home.png"}
+                className="object-cover h-[320px] md:h-[508px]"
+                alt=""
+                width={2000}
+                height={400}
+            />
+
+            <div className="absolute top-0 left-0 flex justify-between w-full h-full">
+                <div className="flex flex-col justify-center w-1/2 pl-20 space-y-5">
+                    <h1 className="text-[40px] font-[700] leading-10 text-black">
+                        {Translator.t("hero-header", lang)}
+                    </h1>
+                    <h1 className="font-bold tracking-tighter">Contact Us</h1>
+
+                    <div className="flex gap-5">
+                        <HeroButton label="WhatsApp" />
+                        <HeroButton label="Email" />
+                    </div>
+                </div>
+
+                <div className="relative w-1/2 h-full">
+                    <Image
+                        src={"/img/home/hero-main-1.png"}
+                        alt="Hero Image"
+                        width={490}
+                        height={490}
+                        className="absolute left-52"
+                    />
+
+                    <Image
+                        src={"/img/home/hero-main-2.png"}
+                        alt="Hero Image"
+                        width={240}
+                        height={240}
+                        className="absolute bottom-0 left-[160px]"
+                    />
+                </div>
+            </div>
+        </section>
+    );
 };
 
 export default Hero;
