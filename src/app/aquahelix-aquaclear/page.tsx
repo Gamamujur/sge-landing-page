@@ -4,7 +4,7 @@ import Image from "next/image";
 import React from "react";
 import { useSearchParams } from "next/navigation";
 
-function LamellaClarifierTank() {
+function Aquahelix() {
   const searchParams = useSearchParams();
   const lang = searchParams.get("lang") || undefined;
   return (
@@ -52,4 +52,4 @@ function LamellaClarifierTank() {
   );
 }
 
-export default LamellaClarifierTank;
+export default Aquahelix;
