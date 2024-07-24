@@ -61,7 +61,7 @@ const SGECarousel = () => {
             </h1>
             <Carousel showThumbs={false} dynamicHeight={true}>
                 {slides.map((slide, index) => (
-                    <div key={index} className="flex h-full gap-5 px-20">
+                    <div key={index} className="flex justify-center h-full gap-5 px-20">
                         {slide.map((item) => (
                             <div key={item.id}>
                                 <img

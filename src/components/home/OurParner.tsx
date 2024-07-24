@@ -90,15 +90,34 @@ function OurParner() {
         <div className="text-4xl font-bold text-center text-[#282870] md:text-left">{Translator.t("our-partner-title", lang)}</div>
       </div>
       <div className="grid grid-cols-4 gap-6 justify-items-center place-items-center md:grid-cols-5 md:gap-10">
-        {parner.map((item, index) => (
-          <Image
-            key={index}
-            src={item.img}
-            alt={item.alt}
-            width={100}
-            height={100}
-          />
-        ))}
+      {parner.map((item, index) => {
+          if (index < 15) {
+            return (
+              <Image
+                key={index}
+                src={item.img}
+                alt={item.alt}
+                width={100}
+                height={100}
+              />
+            );    
+          }
+        })}
+      </div>
+      <div className="flex items-center justify-center w-full gap-20 -mt-5">
+        {parner.map((item, index) => {
+          if (index > 14) {
+            return (
+              <Image
+                key={index}
+                src={item.img}
+                alt={item.alt}
+                width={100}
+                height={100}
+              />
+            );    
+          }
+        })}
       </div>
     </div>
   );
